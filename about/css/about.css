@@ -1,0 +1,474 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth; /* The scrolling feature when clicking the red button */
+}
+
+body {
+	font-family: montserrat ;
+}
+
+/*The design of top bar*/
+/*Navigation Bar*/
+nav{
+    width: 100%;
+    height: auto;
+    float: right;
+    /*position: fixed;*/
+    z-index: 9999;
+    background-color: white;
+    /*overflow: hidden;*/
+    display: block;
+    margin-bottom: 8%;
+}
+nav a {
+
+    color: rgb(83, 87, 166);
+    padding: 1.5vh 0.5vw 1.5vh 0.5vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.3vmin;
+    font-family: "Rubik",sans-serif; 
+    font-weight: 500;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+    display: block;
+}
+
+/*Crete right margin*/
+
+/*Hovered Button*/
+nav a:hover {
+
+    color: #fbfbf2;
+    background-color: rgb(83, 87, 166);
+    display: block;
+    text-align: center; 
+    transition: all .35s;
+}
+
+/*a.on,a:hover{
+	background: #4E4EBF;
+	transition: .5s;
+}*/
+
+/* Main part design of the page */
+.about {
+	width: 100%;
+	padding: 78px 0px;
+}
+
+.about img{
+	height: auto;
+	width: 420px;
+	border-style: double;
+}
+.about-t{
+	width: 550px;
+}
+.main{
+	width: 1135px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+}
+.about-t h1{
+	color: #4E4EBF ;
+	text-transform: capitalize;
+	font-size: 80px;
+	margin-bottom: 20px;
+}
+
+.about-t h5{
+	color: black;
+	font-size: 25px;
+	text-transform: capitalize;
+	margin-bottom: 25px;
+	letter-spacing: 2px;
+}
+
+span.name{
+	color: #93DBDB;
+}
+
+.about-t p{
+	color: black;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px ;
+	letter-spacing: 1px;
+	border: 3px solid #4E4EBF;
+	border-radius: 4px;
+	padding: 13px 20px;
+}
+
+
+.about-t ol{
+	color: black;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px ;
+	letter-spacing: 1px;
+	border: 3px solid #4E4EBF;
+	border-radius: 4px;
+	padding: 13px 20px;
+}
+.btn{
+	background: #f9004d ;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 14px 31px;
+	border-radius: 29px;
+	transition: .5s;
+}
+
+.btn:hover{
+	background: transparent;
+	border: 2px solid #f9004d;
+	color:#f9004d ;
+	cursor: pointer;
+}
+
+
+/* Visit Ourteam part design */
+section.bios{
+	background: white;
+}
+
+.container{
+	margin : 20px 50px;
+	background: white;
+}
+
+h1.heading{
+	font-size: 60px;
+	color: #4E4EBF;
+	margin-bottom: 50px;
+}
+
+.prof{
+	height: auto;
+	width: 200px;
+	margin-top: 50px;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 50%;
+}
+
+#bio{
+	color: #f9004d ;
+	font-style: italic;
+
+}
+.profile h3{
+	font-size: 38;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fbfbf2;
+}
+
+.profiles{
+	display: flex;
+	justify-content: space-around;
+	margin-right: 20px;
+}
+
+.profiles .profile{
+	background: rgb(83, 87, 166);
+	border: 2px solid transparent;   /* design the hover button */
+	transition: .5s;
+}
+
+.profiles .profile:hover{
+	background: #93DBDB;
+	border: 2px solid #93DBDB;
+	cursor: pointer;
+}
+
+.Team-profile{
+	width: 200px;
+	margin-top: 35px;
+	font-size: 35px;
+}
+
+.profile h5{
+	width: 200px;
+	font-size: 19px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	color: black;
+	color: #fbfbf2;
+}
+
+.profile p{
+	padding-bottom: 20px;
+	width: 200px;
+	font-size: 16px;
+	margin-top: 20px;
+	text-align: justify;
+	color: #fbfbf2;
+}
+
+
+.profile a{
+	text-decoration: none;
+}
+
+.profile{
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.profle h3 , h5 , p{
+	text-decoration: none;
+}
+
+
+/*William's table*/
+
+
+#ttble{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 102vh;
+	background: white;
+}
+
+table{
+	margin-top: 50px;
+	border: 1px solid #151314;
+	text-align: center;
+	border-radius: 20px;
+}
+
+th{
+	border: 1px solid #151314;
+	color: black ;
+	text-align: center;
+	transition: .5s;
+}
+th:hover{
+	border: 1px solid transparent;
+	background: #4E4EBF;
+	color: white;
+}
+#lunch:hover{
+	border: 1px solid transparent;
+	background: yellow;
+	color: black;
+}
+
+td:hover{
+	border: 1px solid transparent;
+	background: red;
+	color: white;
+}
+
+td.cos10004:hover{
+	border: 1px solid transparent;
+	background: skyblue;			/* different color for each subject */
+	color: white;
+}
+
+td.cos10009:hover{
+	border: 1px solid transparent;
+	background: darkblue;			/* different color for each subject */
+	color: white;
+}
+td.cos10026:hover{
+	border: 1px solid transparent;
+	background: lightpink;			/* different color for each subject */
+	color: black;
+}
+td.tne10006:hover{
+	border: 1px solid transparent; /* different color for each subject */
+	background: rosybrown;
+	color: white;
+}
+td{
+	border: 1px solid #151314;
+	color: black ;
+	text-align: center;
+	transition: .5s;
+}
+table.center{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.ttble{
+	margin : 50px 100px;
+	background: white;
+}
+.time{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.swtb{
+	font-size: 50px;
+	margin-top: 10px;
+	font-weight: bold;
+	color:#4E4EBF ;
+}
+
+#ti{
+	font-size: 45px;
+	font-style: italic;
+	color: #f9004d;
+}
+
+
+/*Nguyen's table*/
+#ttble{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 102vh;
+	background: white;
+}
+
+table{
+	margin-top: 50px;
+	border: 1px solid #151314;
+	text-align: center;
+	border-radius: 20px;
+}
+th{
+	border: 1px solid #151314;
+	color: black ;
+	text-align: center;
+	transition: .5s;
+}
+th:hover{
+	border: 1px solid transparent;
+	background: #4E4EBF;
+	color: white;
+}
+.lunch:hover{
+	border: 1px solid transparent;
+	background: yellow;
+	color: black;
+}
+
+td:hover{
+	border: 1px solid transparent;
+	background: rgb(230, 72, 72);
+	color: white;
+}
+
+td.cos10025:hover{
+	border: 1px solid transparent;
+	background: skyblue;
+	color: white;
+}
+
+td.cos10009:hover{
+	border: 1px solid transparent;
+	background: rgb(127, 183, 126);
+	color: white;
+}
+td.cos10026:hover{
+	border: 1px solid transparent;
+	background: lightpink;
+	color: black;
+}
+td.lit30002:hover{
+	border: 1px solid transparent;
+	background: rgb(185, 0, 91);
+	color: white;
+}
+td.club:hover{
+	border: 1px solid transparent;
+	background: rgb(255, 127, 63);
+	color: white;
+}
+td{
+	border: 1px solid #151314;
+	color: black ;
+	text-align: center;
+	transition: .5s;
+}
+table.center{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.ttble{
+	margin : 50px 100px;
+	background: white;
+}
+.time{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.swtb{
+	font-size: 50px;
+	margin-top: 10px;
+	font-weight: bold;
+	color:#4E4EBF ;
+}
+
+#ti{
+	font-size: 45px;
+	font-style: italic;
+	color: #f9004d;
+}
+
+a{
+	text-decoration: none;
+}
+/* design resize */ 
+
+@media screen and (max-width: 800px){
+	body {
+		display: block;
+	}
+
+	.about-t{
+		width: 100%;
+	}
+
+	img{
+		clear: right;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.main {
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	.profiles{
+		flex-direction: column;
+	}
+	.profile{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		align-items: center;
+		width: 100%;
+	}
+}
