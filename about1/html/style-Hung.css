@@ -1,0 +1,955 @@
+/* 
+filename: "style.css"
+author: "Tuan Hung Nguyen"
+created: "dont remember"
+last modified: "06/04/2022"
+description: "contains styling information for all 4 pages"
+Purpose: to style pages
+*/
+/*Delete unneeded space*/
+*{
+    margin: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+    text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+/*Navigation Bar*/
+nav{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 9999;
+    overflow: hidden;
+    background-color: white;
+    display: inline-block;
+}
+nav a {
+    float: right;
+    color: rgb(83, 87, 166);
+    padding: 1.5vh 0.5vw 1.5vh 0.5vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.3vmin;
+    font-family: "Rubik",sans-serif; 
+    font-weight: 500;
+    font-weight: bold;
+    
+}
+/*Crete right margin*/
+nav .help{
+    margin-right: 50px;
+}
+/*Hovered Button*/
+nav a:hover {
+
+    color: #fbfbf2;
+    background-color: rgb(83, 87, 166);
+    display: block;
+    text-align: center; 
+    transition: all .35s;
+}
+
+/*Section and Animation*/
+.body{
+    background-color: black;
+}
+section .Homepagebanner{
+    position:relative;
+    z-index: 3;
+    height: 100vh;
+}
+/*Stacked banner*/
+ .banner2 , .banner4, .banner5{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.banner1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.bannerimg{
+    width: 230%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 6s linear infinite;
+}
+/*Zoom out animation*/
+@keyframes zoom-out{
+    100%{
+        width: 220%;
+    }
+}
+/*Changing slide animation*/
+.banner1 {
+    animation: slide1 24s linear infinite;
+}
+.banner2{
+    animation: slide2 24s linear infinite;
+}
+.banner4{
+    animation: slide4 24s linear infinite;
+}
+.banner5{
+    animation: slide5 24s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{  
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide5{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.text-box{
+    width: 30%; 
+    position: relative;
+    top: 30%;
+    left: 3vw;
+    color: white;
+    font-family: "Rubik",sans-serif;
+    animation: textup 24s linear infinite;  
+}
+.text-box h1{
+    margin-bottom: 10%;
+    font-size: 130%;
+}
+.text-box p{
+    font-size: 120%;
+    line-height:120%;
+}
+#textbox4{
+    color: black;
+}
+.wrapper{
+    position: absolute;
+    top: 80%;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+  }
+  
+  .link_wrapper{
+    position: relative;
+  }
+  
+  .link_wrapper a{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 45px;
+    font-weight: bold;
+    text-decoration: none;
+    background: rgb(83, 87, 166);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid rgb(83, 87, 166);
+    transition: all .35s;
+  }
+  
+  .icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
+  }
+  
+  .link_wrapper a:hover{
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+  }
+  
+  .link_wrapper a:hover + .icon{
+    border: 3px solid #2ecc71;
+    right: -25%;
+  }
+
+
+
+.black {
+    height: 95vh;
+}
+
+.black #text{
+    float: left;
+    color: white;
+    width: 30%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-size: 140%;
+    background-color: black;
+}
+.black img{
+    float: right;
+    width: 60%;
+}
+
+.white #text{
+    float: right;
+    color: white;
+    width: 30%;
+    text-align: center;
+    margin-right: 5%;
+    margin-top: 10%;
+    font-size: 140%;
+}
+.white img{
+    float: left;
+    width: 60%;
+}  
+footer{
+    background-color: rgb(83, 87, 166);
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer a {
+    display: inline-block;
+    color: #e5e6e4;
+    text-align: center;
+    padding: 1vh 0.5vw;
+    font-size: 1.5vmin;
+    text-decoration: none;
+}
+@media screen and (max-width: 1530px){
+    .text-box{
+        width: 30%; 
+        top: 30%;
+        left: 3vw;
+    }
+    .text-box h1{
+        text-align: center;
+        margin-bottom: 10%;
+        font-size: 2.7vmin;
+    }
+    .text-box p{
+        font-size: 2.5vmin;
+        line-height:120%;
+    }
+    section{
+        position:relative;
+        z-index: 3;
+    }
+}
+@media screen and (max-width: 1300px){
+    .black {
+        height: 80vh;
+    }
+    section{
+        height: 80vh;
+    }
+    .banner1, .banner2 , .banner4, .banner5{
+        height: 80vh;
+    }
+}
+@media screen and (max-width: 1000px){
+    .black {
+        height: 60vh;
+    }
+    .black img{
+        width: 60%;
+    }
+    section{
+        height: 60vh;
+    }
+    .banner1, .banner2 , .banner4, .banner5{
+        height: 60vh;
+    }
+    .black #text{
+        font-size: 120%;
+    }
+    .white #text{
+        font-size: 120%;
+    }
+    .text-box h1{
+        font-size: 2.3vmin;
+    }
+    .text-box p{
+        font-size: 2vmin;
+    }
+}
+@media screen and (max-width: 800px){
+    .wrapper{
+        top: 80%;
+      }
+    .link_wrapper a{
+        display: block;
+        font-size: 12px;
+        width: 175px;
+        height: 35px;
+        line-height: 31.5px;
+        font-weight: bold;
+        text-decoration: none;
+        background: rgb(83, 87, 166);
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        border: 2.1px solid rgb(83, 87, 166);
+        transition: all .35s;
+      }
+      
+    .icon{
+        width: 35px;
+        height: 35px;
+        border: 2.1px solid transparent;
+        position: absolute;
+        transform: rotate(45deg);
+        right: 0;
+        top: 0;
+        z-index: -1;
+        transition: all .35s;
+      }
+      
+    .icon svg{
+        width: 21px;
+        position: absolute;
+        top: calc(50% - 10.5px);
+        left: calc(50% - 10.5px);
+        transform: rotate(-45deg);
+        fill: #2ecc71;
+        transition: all .35s;
+      }
+      
+    .link_wrapper a:hover{
+        width: 140px;
+        border: 2.1px solid #2ecc71;
+        background: transparent;
+        color: #2ecc71;
+      }
+      
+    .link_wrapper a:hover + .icon{
+        border: 2.1px solid #2ecc71;
+        right: -25%;
+      }
+    .black {
+        height: 48vh;
+    }
+    .black #text{
+        font-size: 100%;
+    }
+    .white #text{
+        font-size: 100%;
+    }
+    section{
+        height: 50vh;
+    }
+    .banner1, .banner2 , .banner4, .banner5{
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 650px){
+    .black {
+        height: 35vh;
+    }
+}
+@media screen and (max-width: 540px){
+    .wrapper{
+        top: 55%;
+      }
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+	scroll-behavior: smooth; /* The scrolling feature when clicking the red button */
+}
+
+body {
+	font-family: "Rubik",sans-serif; 
+}
+
+/*The design of top bar*/
+/*Navigation Bar*/
+nav{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 9999;
+    overflow: hidden;
+    background-color: white;
+    display: inline-block;
+}
+nav a {
+    float: right;
+    color: rgb(83, 87, 166);
+    padding: 1.5vh 0.5vw 1.5vh 0.5vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.3vmin;
+    font-family: "Rubik",sans-serif;  
+    font-weight: 500;
+    font-weight: bold;
+    
+}
+/*Crete right margin*/
+nav .help{
+    margin-right: 50px;
+}
+/*Hovered Button*/
+nav a:hover {
+
+    color: #fbfbf2;
+    background-color: rgb(83, 87, 166);
+    display: block;
+    text-align: center; 
+    transition: all .35s;
+}
+/*a.on,a:hover{
+	background: #4E4EBF;
+	transition: .5s;
+}*/
+
+/* Main part design of the page */
+.about {
+	width: 100%;
+	padding: 78px 0px;
+}
+.about img{
+	height: auto;
+	width: 420px;
+	border-style: double;
+}
+.about-t{
+	width: 30%;
+    position: absolute;
+    top: 15%;
+    margin-left: 3vw;
+}
+.main{
+    float: right;
+	width: 1135px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+}
+#about-t h1{
+
+	text-transform: capitalize;
+	font-size: 250%;
+	margin-bottom: 20px;
+    color: #4E4EBF;
+    text-align: center;
+}
+
+#about-t h5{
+    
+	font-size: 140%;
+    color: white;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+#about-t p{
+ 
+	color: white;
+	line-height: 28px;
+	text-align: center;
+	font-size: 130%;
+	margin-bottom: 45px ;
+	border: 3px solid #4E4EBF;
+	border-radius: 0px;
+	padding: 13px 20px;
+
+}
+
+
+#about-t ol{
+	color: black;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px ;
+	border: 3px solid #4E4EBF;
+	border-radius: 4px;
+	padding: 13px 20px;
+    margin-left: 50px;
+    width: 40%;
+}
+.btn{
+	background: #2ecc71;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 14px 31px;
+	border-radius: 29px;
+	transition: .5s;
+}
+
+.btn:hover{
+	background: transparent;
+	border: 2px solid #2ecc71;
+	color: #2ecc71;
+	cursor: pointer;
+}
+
+
+/* Visit Ourteam part design */
+section.bios{
+	background: white;
+}
+
+.container{
+	margin : 20px 50px;
+	background: white;
+}
+
+h1.heading{
+	font-size: 60px;
+	color: #4E4EBF;
+	margin-bottom: 50px;
+    text-align: center;
+}
+
+.prof{
+	height: auto;
+	width: 15vw;
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 50%;
+}
+
+#bio{
+	color: #2ecc71;
+	font-style: italic;
+
+}
+.profile h3{
+	font-size: 38;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fbfbf2;
+}
+
+.profiles{
+	display: flex;
+	justify-content: space-around;
+	margin-right: 20px;
+}
+
+.profiles .profile{
+	background: rgb(83, 87, 166);
+	border: 2px solid transparent;   /* design the hover button */
+	transition: .5s;
+    height: 70vh;
+}
+
+.profiles .profile:hover{
+	background: #2ecc71;
+	border: 2px solid #2ecc71;
+	cursor: pointer;
+}
+
+.Team-profile{
+	width: 200px;
+	margin-top: 35px;
+	font-size: 35px;
+}
+
+.profile h5{
+	width: 200px;
+	font-size: 19px;
+	font-weight: 100;
+	
+	color: black;
+	color: #fbfbf2;
+}
+
+.profile p{
+	padding-bottom: 20px;
+	width: 200px;
+	font-size: 16px;
+	margin-top: 20px;
+	text-align: justify;
+	color: #fbfbf2;
+}
+
+
+.profile a{
+	text-decoration: none;
+}
+
+.profile{
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+
+/*Dat's table*/
+
+
+.ttble{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 102vh;
+	background: white;
+}
+
+table{
+	margin-top: 50px;
+	border: 1px solid #151314;
+	text-align: center;
+	border-radius: 20px;
+}
+
+th{
+	border: 1px solid #151314;
+	color: black ;
+	text-align: center;
+	transition: .5s;
+}
+th:hover{
+	border: 1px solid transparent;
+	background: #4E4EBF;
+	color: white;
+}
+#lunch:hover{
+	border: 1px solid transparent;
+	background: yellow;
+	color: black;
+}
+
+td:hover{
+	border: 1px solid transparent;
+	background: red;
+	color: white;
+}
+
+td.cos10004:hover{
+	border: 1px solid transparent;
+	background: #2ecc71;			/* different color for each subject */
+	color: white;
+}
+
+td.cos10009:hover{
+	border: 1px solid transparent;
+	background: darkblue;			/* different color for each subject */
+	color: white;
+}
+td.cos10026:hover{
+	border: 1px solid transparent;
+	background: lightpink;			/* different color for each subject */
+	color: black;
+}
+td.tne10006:hover{
+	border: 1px solid transparent; /* different color for each subject */
+	background: rosybrown;
+	color: white;
+}
+td{
+	border: 1px solid #151314;
+	color: black ;
+	text-align: center;
+	transition: .5s;
+}
+table.center{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.ttble{
+	margin : 50px 100px;
+	background: white;
+}
+.time{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.swtb{
+	font-size: 50px;
+	margin-top: 10px;
+	font-weight: bold;
+	color:#4E4EBF ;
+}
+
+#ti{
+	font-size: 45px;
+	font-style: italic;
+	color: #f9004d;
+}
+
+
+/*Nguyen's table*/
+#ttble{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 102vh;
+	background: white;
+}
+
+table{
+	margin-top: 50px;
+	border: 1px solid #151314;
+	text-align: center;
+	border-radius: 20px;
+}
+th{
+	border: 1px solid #151314;
+	color: black ;
+	text-align: center;
+	transition: .5s;
+}
+th:hover{
+	border: 1px solid transparent;
+	background: #4E4EBF;
+	color: white;
+}
+.lunch:hover{
+	border: 1px solid transparent;
+	background: yellow;
+	color: black;
+}
+
+td:hover{
+	border: 1px solid transparent;
+	background: rgb(230, 72, 72);
+	color: white;
+}
+
+td.cos10025:hover{
+	border: 1px solid transparent;
+	background: skyblue;
+	color: white;
+}
+
+td.cos10009:hover{
+	border: 1px solid transparent;
+	background: rgb(127, 183, 126);
+	color: white;
+}
+td.cos10026:hover{
+	border: 1px solid transparent;
+	background: lightpink;
+	color: black;
+}
+td.lit30002:hover{
+	border: 1px solid transparent;
+	background: rgb(185, 0, 91);
+	color: white;
+}
+td.club:hover{
+	border: 1px solid transparent;
+	background: rgb(255, 127, 63);
+	color: white;
+}
+td{
+	border: 1px solid #151314;
+	color: black ;
+	text-align: center;
+	transition: .5s;
+}
+table.center{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.ttble{
+	margin : 50px 100px;
+	background: white;
+}
+.time{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.swtb{
+	font-size: 50px;
+	margin-top: 10px;
+	font-weight: bold;
+	color:#4E4EBF ;
+}
+
+#ti{
+	font-size: 45px;
+	font-style: italic;
+	color: #f9004d;
+}
+
+/* design resize */ 
+
+@media screen and (max-width: 800px){
+	body {
+		display: block;
+	}
+
+	.about-t{
+		width: 100%;
+	}
+
+	img{
+		clear: right;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.main {
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+	.profiles{
+		flex-direction: column;
+	}
+	.profile{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		align-items: center;
+		width: 100%;
+	}
+}
+footer{
+    background-color: rgb(83, 87, 166);
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer a {
+    display: inline-block;
+    color: #e5e6e4;
+    text-align: center;
+    padding: 1vh 0.5vw;
+    font-size: 1.5vmin;
+    text-decoration: none;
+}	
+
+
+
+
+
+
